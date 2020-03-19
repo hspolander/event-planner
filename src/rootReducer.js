@@ -1,4 +1,4 @@
 import { combineReducers } from 'redux';
-import eventReducer from './eventList/reducer';
+import eventReducer from './Events/reducer';
 
 export default combineReducers({ eventReducer });
