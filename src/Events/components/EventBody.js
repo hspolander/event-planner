@@ -7,8 +7,9 @@ const useStyles = makeStyles((theme) => ({
   root: {},
   eventListPaper: {
     margin: 'auto',
-    width: 600,
-    height: 700,
+    width: '40%',
+    maxHeight: '90%',
+    overflow: 'auto',
   },
 }));
 
