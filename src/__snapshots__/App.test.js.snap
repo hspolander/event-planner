@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match snapshot 1`] = `
+<div>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg"
+    role="main"
+  >
+    <div
+      class="MuiPaper-root makeStyles-eventListPaper-79 MuiPaper-elevation2 MuiPaper-rounded"
+    >
+      <ul
+        aria-labelledby="events-subheader"
+        class="MuiList-root MuiList-padding MuiList-subheader"
+        role="list"
+      >
+        <div
+          class="MuiListSubheader-root MuiListSubheader-sticky MuiListSubheader-gutters"
+          id="events-subheader"
+        >
+          Events
+        </div>
+      </ul>
+    </div>
+    <button
+      class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-colorInherit"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiFab-label"
+      >
+        Toggle theme
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;

@@ -1,6 +1,6 @@
 import { FETCH_EVENTS, FETCH_EVENTS_FULFILLED, FETCH_EVENTS_REJECTED } from './actionTypes';
 
-const initialState = { events: null, fetching: false, error: null };
+const initialState = { events: null, fetching: false, error: false };
 
 const eventReducer = (state = initialState, action) => {
   switch (action.type) {
