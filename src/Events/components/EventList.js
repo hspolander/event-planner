@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { List } from '@material-ui/core';
+import { List, ListSubheader } from '@material-ui/core';
 import { connect } from 'react-redux';
 
 import EventItem from './EventItem';
@@ -13,13 +13,20 @@ const EventBody = ({ events, loading, error, fetchEvents }) => {
     fetchEvents();
   }, [fetchEvents]);
   return (
-    <List>
+    <List
+      aria-labelledby="events-subheader"
+      subheader={
+        <ListSubheader component="div" id="events-subheader">
+          Events
+        </ListSubheader>
+      }
+    >
       {loading ? (
         <Loading loading={loading} />
       ) : error ? (
         <Error error={error} />
       ) : events ? (
-        events.map((event, index) => <EventItem event={event} index={index} />)
+        events.map((event, index) => <EventItem key={index} event={event} />)
       ) : null}
     </List>
   );

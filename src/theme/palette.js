@@ -18,6 +18,7 @@ const componentPalette = {
     listItem: {
       default: colorTube.grayLight[100],
       contrastText: common.black,
+      borderColorArray: colorTube.listItemBordersLight,
     },
     listItemText: {
       contrastText: common.black,
@@ -46,6 +47,7 @@ const componentPalette = {
     listItem: {
       default: colorTube.grayDark[700],
       contrastText: common.black,
+      borderColorArray: colorTube.listItemBordersDark,
     },
     listItemText: {
       contrastText: common.black,

@@ -33,6 +33,18 @@ export const colors = {
       700: '#54CBD0',
       900: '#43908B',
     },
+    listItemBorders: [
+      '#ff6f60',
+      '#76d275',
+      '#9162e4',
+      '#ff5c8d',
+      '#aee571',
+      '#c158dc',
+      '#6f74dd',
+      '#4ebaaa',
+      '#6ab7ff',
+      '#4c8c4a',
+    ],
   },
   dark: {
     gray: {
@@ -65,6 +77,18 @@ export const colors = {
       800: '#005052',
       900: '#003635',
     },
+    listItemBorders: [
+      '#ab000d',
+      '#00701a',
+      '#280680',
+      '#a00037',
+      '#4b830d',
+      '#5c007a',
+      '#00227b',
+      '#005b4f',
+      '#005cb2',
+      '#003300',
+    ],
   },
 };
 
@@ -87,6 +111,7 @@ export const colorTube = {
     contrastText: common.black,
   },
   grayLight: lightPalette.gray,
+  listItemBordersLight: lightPalette.listItemBorders,
 
   primaryDark: {
     extralight: darkPalette.teal[200],
@@ -103,4 +128,5 @@ export const colorTube = {
     contrastText: common.black,
   },
   grayDark: darkPalette.gray,
+  listItemBordersDark: darkPalette.listItemBorders,
 };

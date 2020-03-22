@@ -3,8 +3,7 @@ import { Paper, makeStyles } from '@material-ui/core';
 
 import EventList from './EventList';
 
-const useStyles = makeStyles((theme) => ({
-  root: {},
+const useStyles = makeStyles(() => ({
   eventListPaper: {
     margin: 'auto',
     width: '40%',
@@ -16,11 +15,9 @@ const useStyles = makeStyles((theme) => ({
 const EventBody = () => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <Paper elevation={2} className={classes.eventListPaper}>
-        <EventList />
-      </Paper>
-    </div>
+    <Paper elevation={2} className={classes.eventListPaper}>
+      <EventList />
+    </Paper>
   );
 };
 

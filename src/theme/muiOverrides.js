@@ -23,7 +23,9 @@ const overrides = (theme) => ({
   MuiListItem: {
     root: {
       padding: '5px 7px',
-      margin: '5px 0px',
+      margin: '10px 0px',
+      border: '4px solid',
+      borderRadius: '4px',
       backgroundColor: componentPalette[theme].listItem.default,
     },
   },
