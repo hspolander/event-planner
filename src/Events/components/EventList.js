@@ -8,7 +8,7 @@ import Error from './Error';
 import { eventListType, errorType, loadingType, fetchEventsType } from '../../types';
 import { fetchEvents } from '../actions';
 
-const EventBody = ({ events, loading, error, fetchEvents }) => {
+const EventList = ({ events, loading, error, fetchEvents }) => {
   useEffect(() => {
     fetchEvents();
   }, [fetchEvents]);
@@ -32,7 +32,7 @@ const EventBody = ({ events, loading, error, fetchEvents }) => {
   );
 };
 
-EventBody.propTypes = {
+EventList.propTypes = {
   events: eventListType,
   loading: loadingType,
   error: errorType,
@@ -46,4 +46,4 @@ const mapStateToProps = ({ eventReducer }) => ({
 });
 const mapDispatchToProps = { fetchEvents };
 
-export default connect(mapStateToProps, mapDispatchToProps)(EventBody);
+export default connect(mapStateToProps, mapDispatchToProps)(EventList);
