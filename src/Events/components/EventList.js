@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import EventItem from './EventItem';
 import Loading from './Loading';
 import Error from './Error';
+import { eventListType, errorType, loadingType, fetchEventsType } from '../../types';
 import { fetchEvents } from '../actions';
 
 const EventBody = ({ events, loading, error, fetchEvents }) => {
@@ -22,6 +23,13 @@ const EventBody = ({ events, loading, error, fetchEvents }) => {
       ) : null}
     </List>
   );
+};
+
+EventBody.propTypes = {
+  events: eventListType,
+  loading: loadingType,
+  error: errorType,
+  fetchEvents: fetchEventsType,
 };
 
 const mapStateToProps = ({ eventReducer }) => ({
