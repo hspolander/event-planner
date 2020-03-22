@@ -14,6 +14,7 @@ const EventList = ({ events, loading, error, fetchEvents }) => {
   }, [fetchEvents]);
   return (
     <List
+      role="list"
       aria-labelledby="events-subheader"
       subheader={
         <ListSubheader component="div" id="events-subheader">

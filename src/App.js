@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
-import * as themes from './theme';
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
+import { Container, Fab } from '@material-ui/core';
+
 import EventBody from './Events/components/EventBody';
 import { themeType } from './types';
-import { Container, Fab } from '@material-ui/core';
+import * as themes from './theme';
 
 const App = () => {
   const [theme, setTheme] = useState('darkTheme');
@@ -15,7 +16,7 @@ const App = () => {
 
   return (
     <MuiThemeProvider theme={createMuiTheme(themes[theme])}>
-      <Container>
+      <Container role="main">
         <EventBody />
         <Fab color="inherit" variant="extended" onClick={() => toggleTheme()}>
           Toggle theme

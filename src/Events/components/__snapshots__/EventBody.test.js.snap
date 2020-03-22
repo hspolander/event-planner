@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardDetails should match snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-eventListPaper-1 MuiPaper-elevation2 MuiPaper-rounded"
+  >
+    <ul
+      aria-labelledby="events-subheader"
+      class="MuiList-root MuiList-padding MuiList-subheader"
+      role="list"
+    >
+      <div
+        class="MuiListSubheader-root MuiListSubheader-sticky MuiListSubheader-gutters"
+        id="events-subheader"
+      >
+        Events
+      </div>
+    </ul>
+  </div>
+</div>
+`;
